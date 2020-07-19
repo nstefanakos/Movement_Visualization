@@ -162,8 +162,7 @@ void Callback_1(const sensor_msgs::LaserScan::ConstPtr& msg)
 	mark.color.b = 0.0;
 	mark.pose.position.z = 0.5;
 	mark.lifetime = ros::Duration(0.3); // After-image time
-	double check_t_now;
-	double check_t;
+
 	if (count_1 >= 1)
 	{
 		ros::Time time_now = msg->header.stamp;
